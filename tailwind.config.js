@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "selector",
+  content: ["./src/**/*.{html,js,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        'haiti': {
+          '50': 'oklab(from #eef1ff l a b)',
+          '100': 'oklab(from #e1e5fe l a b)',
+          '200': 'oklab(from #c8cffd l a b)',
+          '300': 'oklab(from #a7affa l a b)',
+          '400': 'oklab(from #8486f5 l a b)',
+          '500': 'oklab(from #6c66ee l a b)',
+          '600': 'oklab(from #5c4ae1 l a b)',
+          '700': 'oklab(from #4f3bc7 l a b)',
+          '800': 'oklab(from #4033a0 l a b)',
+          '900': 'oklab(from #38307f l a b)',
+          '950': 'oklab(from #171332 l a b)',
+        },
+        'casal': {
+          '50': 'oklab(from #f0fbfa l a b)',
+          '100': 'oklab(from #d8f4f5 l a b)',
+          '200': 'oklab(from #b6e9eb l a b)',
+          '300': 'oklab(from #84d9dc l a b)',
+          '400': 'oklab(from #4abec6 l a b)',
+          '500': 'oklab(from #2fa2ab l a b)',
+          '600': 'oklab(from #2a8490 l a b)',
+          '700': 'oklab(from #286b76 l a b)',
+          '800': 'oklab(from #2a5d67 l a b)',
+          '900': 'oklab(from #254b54 l a b)',
+          '950': 'oklab(from #143138 l a b)',
+        },
+        'gallery': {
+          '50': 'oklab(from #f8f8f8 l a b)',
+          '100': 'oklab(from #eeeeee l a b)',
+          '200': 'oklab(from #dcdcdc l a b)',
+          '300': 'oklab(from #bdbdbd l a b)',
+          '400': 'oklab(from #989898 l a b)',
+          '500': 'oklab(from #7c7c7c l a b)',
+          '600': 'oklab(from #656565 l a b)',
+          '700': 'oklab(from #525252 l a b)',
+          '800': 'oklab(from #464646 l a b)',
+          '900': 'oklab(from #3d3d3d l a b)',
+          '950': 'oklab(from #292929 l a b)',
+        },
+        'shamrock': {
+          '50': 'oklab(from #ebfef6 l a b)',
+          '100': 'oklab(from #cefde8 l a b)',
+          '200': 'oklab(from #a2f8d6 l a b)',
+          '300': 'oklab(from #66efc2 l a b)',
+          '400': 'oklab(from #4ae3b5 l a b)',
+          '500': 'oklab(from #04c591 l a b)',
+          '600': 'oklab(from #00a077 l a b)',
+          '700': 'oklab(from #008062 l a b)',
+          '800': 'oklab(from #00654f l a b)',
+          '900': 'oklab(from #015342 l a b)',
+          '950': 'oklab(from #002f27 l a b)',
+        },
+      }
+    },
+  },
+  plugins: [],
+}
+
