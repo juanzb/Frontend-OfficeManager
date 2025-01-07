@@ -11,6 +11,106 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  /* Haiti Colors */
+  --haiti-50-hex: #eef1ff;
+  --haiti-50-oklab: oklab(from #eef1ff l a b);
+  --haiti-100-hex: #e1e5fe;
+  --haiti-100-oklab: oklab(from #e1e5fe l a b);
+  --haiti-200-hex: #c8cffd;
+  --haiti-200-oklab: oklab(from #c8cffd l a b);
+  --haiti-300-hex: #a7affa;
+  --haiti-300-oklab: oklab(from #a7affa l a b);
+  --haiti-400-hex: #8486f5;
+  --haiti-400-oklab: oklab(from #8486f5 l a b);
+  --haiti-500-hex: #6c66ee;
+  --haiti-500-oklab: oklab(from #6c66ee l a b);
+  --haiti-600-hex: #5c4ae1;
+  --haiti-600-oklab: oklab(from #5c4ae1 l a b);
+  --haiti-700-hex: #4f3bc7;
+  --haiti-700-oklab: oklab(from #4f3bc7 l a b);
+  --haiti-800-hex: #4033a0;
+  --haiti-800-oklab: oklab(from #4033a0 l a b);
+  --haiti-900-hex: #38307f;
+  --haiti-900-oklab: oklab(from #38307f l a b);
+  --haiti-950-hex: #171332;
+  --haiti-950-oklab: oklab(from #171332 l a b);
+
+  /* Casal Colors */
+  --casal-50-hex: #f0fbfa;
+  --casal-50-oklab: oklab(from #f0fbfa l a b);
+  --casal-100-hex: #d8f4f5;
+  --casal-100-oklab: oklab(from #d8f4f5 l a b);
+  --casal-200-hex: #b6e9eb;
+  --casal-200-oklab: oklab(from #b6e9eb l a b);
+  --casal-300-hex: #84d9dc;
+  --casal-300-oklab: oklab(from #84d9dc l a b);
+  --casal-400-hex: #4abec6;
+  --casal-400-oklab: oklab(from #4abec6 l a b);
+  --casal-500-hex: #2fa2ab;
+  --casal-500-oklab: oklab(from #2fa2ab l a b);
+  --casal-600-hex: #2a8490;
+  --casal-600-oklab: oklab(from #2a8490 l a b);
+  --casal-700-hex: #286b76;
+  --casal-700-oklab: oklab(from #286b76 l a b);
+  --casal-800-hex: #2a5d67;
+  --casal-800-oklab: oklab(from #2a5d67 l a b);
+  --casal-900-hex: #254b54;
+  --casal-900-oklab: oklab(from #254b54 l a b);
+  --casal-950-hex: #143138;
+  --casal-950-oklab: oklab(from #143138 l a b);
+
+  /* Gallery Colors */
+  --gallery-50-hex: #f8f8f8;
+  --gallery-50-oklab: oklab(from #f8f8f8 l a b);
+  --gallery-100-hex: #eeeeee;
+  --gallery-100-oklab: oklab(from #eeeeee l a b);
+  --gallery-200-hex: #dcdcdc;
+  --gallery-200-oklab: oklab(from #dcdcdc l a b);
+  --gallery-300-hex: #bdbdbd;
+  --gallery-300-oklab: oklab(from #bdbdbd l a b);
+  --gallery-400-hex: #989898;
+  --gallery-400-oklab: oklab(from #989898 l a b);
+  --gallery-500-hex: #7c7c7c;
+  --gallery-500-oklab: oklab(from #7c7c7c l a b);
+  --gallery-600-hex: #656565;
+  --gallery-600-oklab: oklab(from #656565 l a b);
+  --gallery-700-hex: #525252;
+  --gallery-700-oklab: oklab(from #525252 l a b);
+  --gallery-800-hex: #464646;
+  --gallery-800-oklab: oklab(from #464646 l a b);
+  --gallery-900-hex: #3d3d3d;
+  --gallery-900-oklab: oklab(from #3d3d3d l a b);
+  --gallery-950-hex: #292929;
+  --gallery-950-oklab: oklab(from #292929 l a b);
+
+  /* Shamrock Colors */
+  --shamrock-50-hex: #ebfef6;
+  --shamrock-50-oklab: oklab(from #ebfef6 l a b);
+  --shamrock-100-hex: #cefde8;
+  --shamrock-100-oklab: oklab(from #cefde8 l a b);
+  --shamrock-200-hex: #a2f8d6;
+  --shamrock-200-oklab: oklab(from #a2f8d6 l a b);
+  --shamrock-300-hex: #66efc2;
+  --shamrock-300-oklab: oklab(from #66efc2 l a b);
+  --shamrock-400-hex: #4ae3b5;
+  --shamrock-400-oklab: oklab(from #4ae3b5 l a b);
+  --shamrock-500-hex: #04c591;
+  --shamrock-500-oklab: oklab(from #04c591 l a b);
+  --shamrock-600-hex: #00a077;
+  --shamrock-600-oklab: oklab(from #00a077 l a b);
+  --shamrock-700-hex: #008062;
+  --shamrock-700-oklab: oklab(from #008062 l a b);
+  --shamrock-800-hex: #00654f;
+  --shamrock-800-oklab: oklab(from #00654f l a b);
+  --shamrock-900-hex: #015342;
+  --shamrock-900-oklab: oklab(from #015342 l a b);
+  --shamrock-950-hex: #002f27;
+  --shamrock-950-oklab: oklab(from #002f27 l a b);
+}
+
+
+
 body {
   margin: 0;
   min-width: 320px;
@@ -19,4 +119,40 @@ body {
 
 html.dark {
   color-scheme: dark;
+}
+
+.activeShadow:hover {
+  filter: drop-shadow(0px 0px 32px light-dark(var(--shamrock-400-hex), var(--shamrock-600-hex)));
+}
+
+:focus-visible {
+  outline: 2px solid;
+  outline-offset: 3px;
+  outline-color: light-dark(oklab(from var(--shamrock-200-oklab) l a b), oklab(from var(--shamrock-800-oklab) l a b));
+}
+
+.animTextLogin {
+  animation: loginText 0.5s ease forwards;
+}
+
+@keyframes loginText {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.filterLoginImg {
+  filter: invert(38%) sepia(97%) saturate(608%) hue-rotate(122deg) brightness(98%) contrast(101%);
+}
+
+.backgroundImgShamrock {
+  background-image: url("/src/assets/imgs/pexels-tiger-lily-4483775.jpg");
 }

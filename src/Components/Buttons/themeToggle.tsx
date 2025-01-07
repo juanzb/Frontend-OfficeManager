@@ -67,9 +67,9 @@ const ThemeToggle = () => {
         onClick={toggleTheme}
         className={`p-2 rounded-lg ${
           theme === 'light' 
-            ? 'bg-blue-500 text-white' 
-            : 'bg-gray-200 dark:bg-gray-800'
-        } hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors`}
+            ? 'bg-casal-300 text-white' 
+            : 'bg-casal-400 dark:bg-casal-500'
+        } hover:bg-casal-200 dark:hover:bg-casal-300 transition-colors`}
         aria-label="Light theme"
       >
         <Sun className="w-5 h-5" style={theme === "dark" ? {display: "block"} : {display: "none"}}/>
